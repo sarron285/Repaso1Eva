@@ -45,12 +45,28 @@ class Personaje(
 //clase KaerMorhen con sus correspondientes metodos.
 class KaerMorhen (){
 
-    fun Entrar (nombre:Personaje, vida:Personaje, fuerza:Personaje, defensa:Personaje){
+    //Lista de personajes:
+
+
+    val listaPersonaje = mutableListOf("personaje1", "personaje2", "personaje3", "personaje4")
+
+
+
+    fun Entrar (personaje5:Personaje){
+        listaPersonaje.add("personaje5")
     }
 
-    fun Salir(nombre: Personaje){
+    fun SalirPersonaje(nombre: Personaje){
+       //usas directamente el personaje
+        listaPersonaje.forEach(){
+
+       }
+        listaPersonaje.remove()
     }
 
+    fun SalirNombre (nombre: String){
+        //tienes que buscar en el personaje
+    }
     fun Habitacion(nombre: Personaje){
     }
 
